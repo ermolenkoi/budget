@@ -1,0 +1,11 @@
+1. Скачать tomcat,  разместить где-нибудь на диске C:\
+2. Установить переменную окружения CATALINA_HOME она должна указывать на каталог с установленным tomcat.
+3. В файле tomcat\conf\tomcat-users.xml внутри тега <tomcat-users> добавить:
+    <user username="tomcat" password="tomcat" roles="manager-gui"/> Это нужно для доступа к Manager App
+4. В tomcat\bin открываем командую строку и выполняем .\startup.bat
+5. С права в IDEA находим закладку maven, запускаем Lifecycle/package. После выполнения в корне проекта появится папка
+    target, в ней будут лежать наши скомпелированные классы и самое главное budget-planning-1.0-SNAPSHOT.war
+6. Открываем в браузере http://localhost:8080/ , затем переходим в Manager App. В рвзделе "WAR файл для развёртывания"
+    выбираем и загружаем наш варник.
+7. Переходим по ссылке http://localhost:8080/budget-planning-1.0-SNAPSHOT/
+    и видим нашу страничку {root}\src\main\webapp\index.jsp , где root корень проекта
