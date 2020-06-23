@@ -3,6 +3,6 @@
 <body>
 <h2>Привет Илья Сергей и Иван</h2>
 <p>Саратов с вами!</p>
-<p><a href="pages/allArticles.jsp">Переход на другую страницу</a></p>
+<p><a href="/budget_planning_war/getArticles">Переход на другую страницу</a></p>
 </body>
 </html>
