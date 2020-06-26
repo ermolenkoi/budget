@@ -9,7 +9,11 @@ public class Article {
     private String description;
 
     public Article(Integer id, String name, String description) {
+        this(name, description);
         this.id = id;
+    }
+
+    public Article(String name, String description) {
         this.name = name;
         this.description = description;
     }
