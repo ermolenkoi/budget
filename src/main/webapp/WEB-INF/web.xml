@@ -5,6 +5,8 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+
+
   <filter>
     <filter-name>CharsetFilter</filter-name>
     <filter-class>servlet.filter.CharsetFilter</filter-class>
@@ -21,12 +23,36 @@
 
   <servlet>
     <servlet-name>GetArticles</servlet-name>
-    <servlet-class>servlet.ArticlesServlet</servlet-class>
+    <servlet-class>servlet.article.GetArticleServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>DeleteArticle</servlet-name>
+    <servlet-class>servlet.article.DeleteArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateArticles</servlet-name>
+    <servlet-class>servlet.article.UpdateArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddArticles</servlet-name>
+    <servlet-class>servlet.article.AddArticleServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>GetArticles</servlet-name>
-    <url-pattern>/getArticles</url-pattern>
+    <url-pattern>/articles</url-pattern>
   </servlet-mapping>
-
+  <servlet-mapping>
+    <servlet-name>DeleteArticle</servlet-name>
+    <url-pattern>/articles/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateArticles</servlet-name>
+    <url-pattern>/articles/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddArticles</servlet-name>
+    <url-pattern>/articles/add</url-pattern>
+  </servlet-mapping>
 
 </web-app>
