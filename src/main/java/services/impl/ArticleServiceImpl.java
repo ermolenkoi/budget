@@ -22,17 +22,17 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public int deleteArticle(Integer id) {
-        return articleDAO.deleteArticle(id);
+    public void deleteArticle(Integer id) {
+        articleDAO.deleteArticle(id);
     }
 
     @Override
-    public int addArticle(Article article) {
-        return articleDAO.addArticle(article);
+    public void addArticle(Article article) {
+        articleDAO.addArticle(article);
     }
 
     @Override
-    public int updateArticle(Article article) {
-        return articleDAO.updateArticle(article);
+    public void updateArticle(Article article) {
+         articleDAO.updateArticle(article);
     }
 }

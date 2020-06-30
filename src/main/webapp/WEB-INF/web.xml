@@ -9,6 +9,8 @@
     <servlet-name>GetArticles</servlet-name>
     <servlet-class>servlet.ArticlesServlet</servlet-class>
   </servlet>
+
+
   <servlet-mapping>
     <servlet-name>GetArticles</servlet-name>
     <url-pattern>/getArticles</url-pattern>

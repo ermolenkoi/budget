@@ -8,11 +8,18 @@ public class Article {
 
     private String description;
 
+    public Article(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
     public Article(Integer id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
     }
+
+
 
     public Integer getId() {
         return id;

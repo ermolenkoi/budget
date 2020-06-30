@@ -10,10 +10,10 @@ public interface ArticleDAO {
 
     Article getArticle(Integer id);
 
-    int deleteArticle(Integer id);
+    void deleteArticle(Integer id);
 
-    int addArticle(Article article);
+    void addArticle(Article article);
 
-    int updateArticle(Article article);
+    void updateArticle(Article article);
 
 }

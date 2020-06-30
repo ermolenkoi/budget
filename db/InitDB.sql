@@ -10,9 +10,7 @@ CREATE TABLE budget.article
     description VARCHAR(20)
 );
 
-INSERT INTO budget.article(
-    name, description)
-VALUES ('бензин', 'мой авто');
+INSERT INTO budget.article(name, description) VALUES ('бензин', 'мой авто');
 
 INSERT INTO budget.article(
     name, description)
