@@ -44,4 +44,5 @@ public class ReceiptsExpenditureDAOImpl extends BasicDAO implements ReceiptsExpe
     public void updateReceiptsExpenditure(ReceiptsExpenditure receiptsExpenditure) {
 
     }
+
 }

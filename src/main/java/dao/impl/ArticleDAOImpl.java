@@ -69,10 +69,6 @@ public class ArticleDAOImpl extends BasicDAO implements ArticleDAO {
             }
         }
 
-
-
-
-
     }
 
     public void updateArticle(Article article) {

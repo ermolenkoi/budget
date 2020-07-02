@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=windows-1251" language="java" pageEncoding="UTF-8" %>
-<%@ page import="java.util.List" %>
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ page import="model.Article" %>
 <html>
 <head>
@@ -15,5 +14,8 @@
     %>
 
             <p><%=article.toString()%></p>
+
+    <p><a href="readArticles">Получить все значения БД</a></p>
+
     </body>
 </html>
