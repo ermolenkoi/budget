@@ -9,8 +9,5 @@ public class TestGitHabActions {
         assertTrue(true);
     }
 
-    @Test
-    public void testFail() {
-        assertTrue(false);
-    }
+
 }
