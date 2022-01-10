@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: mvn install:install-file -Dfile=lib\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=18.15 -Dpackaging=jar
+      - run: mvn install:install-file -Dfile=lib/ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=18.15 -Dpackaging=jar
       - run: mvn test
       
 
